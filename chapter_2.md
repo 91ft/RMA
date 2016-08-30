@@ -45,3 +45,16 @@
 ![figure2-2](./figure/figure2-2.png)
 
 그림 2-2. 마이크로서비스의 컨텍스트간 경계
+
+### 독립적으로 행동해라
+
+> Insofar as any agent acts on reason alone, that agent adopts and acts
+only on self-consistent maxims that will not conflict with other
+maxims any such agent could adopt.
+Such maxims can also be adopted by and acted on by all other agents acting on reason alone.
+
+> —Law of Autonomy by Immanuel Kant
+
+격리는 자율성의 전제 조건이다. 오직 서비스들이 분리되었을 때에만 완전히 자율적이며 독립적으로 의사결정하고 작동하며, 다른 서비스들과 협력하며 조직화해 문제를 해결할 수 있다.
+
+자율적인 서비스만이 프로토콜/API를 공개하여 자신의 행위를 보장할 수 있다. 이 단순하지만 기본적인 사실을 인정하는 것은 우리가 자율적인 서비스를 이해하고 협업 시스템을 만드는 데 지대한 영향을 끼친다.
