@@ -85,3 +85,5 @@ Such maxims can also be adopted by and acted on by all other agents acting on re
 지금까지, 마이크로서비스를 각각의 영역에서 책임을 가지고 있는 고립된 서비스의 집합으로 특정지었다. 마이크로서비스는 각각의 서비스를 회복력의 전제조건인 분리에 죽고사는 단일의 구성 단위로 다룰 수 있는 근거가 되었고, 또한 탄력성의 전제조건인 분리 안에서의 이동이 가능하게 하였다.
 
 이 모든 것들이 좋은 생각 같긴 한데, 우리는 지금 상태에 대하여 애써 모른척 하고 있다.
+
+마이크로서비스는 때때로 상태 기반의 엔티티이다: [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)나 [Actor Model](https://en.wikipedia.org/wiki/Actor_model)과 유사하게, 그리고 확실히 단일 단위로 여겨지는 상태를 요구하는 분리를 캡슐화한다.
