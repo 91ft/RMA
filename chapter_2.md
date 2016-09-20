@@ -87,3 +87,11 @@ Such maxims can also be adopted by and acted on by all other agents acting on re
 이 모든 것들이 좋은 생각 같긴 한데, 우리는 지금 상태에 대하여 애써 모른척 하고 있다.
 
 마이크로서비스는 때때로 상태 기반의 엔티티이다: [OOP](https://en.wikipedia.org/wiki/Object-oriented_programming)나 [Actor Model](https://en.wikipedia.org/wiki/Actor_model)과 유사하게, 그리고 확실히 단일 단위로 여겨지는 상태를 요구하는 분리를 캡슐화한다.
+
+
+불행하게도, 많은 웹 프레임워크들이 그러하듯이 서비스의 상태를 거대한 하나의 공유 데이터베이스에 밀어넣는 state가 없는 controller-style의 서비스들을 "stateless" 아키텍처라 부르며 문제를 무시하는 것은 원하는 만큼 도움이 되지 않을 것이다. 그리고 third-party에 문제를 위임할 뿐이어서
+확장성 뿐만 아니라 데이터 무결성 보장 그리고 가용성 보장 둘 다 제어하기가 힘들어질 것이다(그림 2-3 참조).
+
+![figure2-3](./figure/figure2-3.png)
+
+그림 2-3. 위장한 단일 조직은 여전히 단일 조직이다.
