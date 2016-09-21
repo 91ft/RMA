@@ -95,3 +95,5 @@ Such maxims can also be adopted by and acted on by all other agents acting on re
 ![figure2-3](./figure/figure2-3.png)
 
 그림 2-3. 위장한 단일 조직은 여전히 단일 조직이다.
+
+각각의 마이크로서비스는 자신의 상태와 지속성에 대해 유일하게 책임을 가져야 한다. 컨텍스트를 나누어 각 서비스를 설계하는 것은 흔한 언어를 가지는 자신만의 도메인을 정의하기 때문에 도움이 될 수 있다. 이러한 두 기술은 도메인 주도 설계(DDD)에서 비롯되었다.
