@@ -97,3 +97,7 @@ Such maxims can also be adopted by and acted on by all other agents acting on re
 그림 2-3. 위장한 단일 조직은 여전히 단일 조직이다.
 
 각각의 마이크로서비스는 자신의 상태와 지속성에 대해 유일하게 책임을 가져야 한다. 컨텍스트를 나누어 각 서비스를 설계하는 것은 흔한 언어를 가지는 자신만의 도메인을 정의하기 때문에 도움이 될 수 있다. 이러한 두 기술은 [도메인 주도 설계(DDD)](https://en.wikipedia.org/wiki/Domain-driven_design)에서 비롯되었다. 여기에서 소개하는 모든 새로운 개념의, 학습을 시작하기에 좋은 DDD를 고려해 보아라. 마이크로서비스는 DDD에 지대한 영향을 받았고 마이크로서비스에서 볼 수 있는 대다수 용어들 또한 DDD로부터 나왔다. Bounded Context를 통해 다른 마이크로서비스와 통신할 때, 그것의 상태만 정중히 요청할 수 있지 강제로 밝힐 수는 없다. 각 서비스는 현재 상태에서 파생된 불변의 데이터의 요청에 자체적으로 응답하지만, 서비스의 가변 상태를 직접적으로 드러내진 않는다.
+
+이것은 결국 각 서비스가 원하는 상태를 나타내고 가장 적합한 형식과 매체에 저장할 수 있는 자유를 준다. 일부 서비스는 전통적인 관계형 데이터베이스 시스템([RDBMS](https://en.wikipedia.org/wiki/Relational_database_management_system))(Oracle, MySQL, Postgres 포함)이나 [NoSQL 데이터베이스](http://nosql-database.org/)([Cassandra](http://cassandra.apache.org/), [Riak](http://basho.com/products)), [시계열 데이터베이스](https://en.wikipedia.org/wiki/Time_series_database)([InfluxDB](https://influxdata.com/), [OpenTSDB](http://opentsdb.net/))를 선택할 수 있고, 이벤트 소싱이나 CQRS를 통해 이벤트 로그([Kafka](http://kafka.apache.org/), [Amazon Kinesis](https://aws.amazon.com/kinesis/), Cassandra)를 사용한다.
+
+분산 데이터 관리 및 지속성에서 얻을 수 있는 이점은 종종 *Polyglot Persistence* 라 불린다.
