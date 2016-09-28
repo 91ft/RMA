@@ -100,4 +100,4 @@ Such maxims can also be adopted by and acted on by all other agents acting on re
 
 이것은 결국 각 서비스가 원하는 상태를 나타내고 가장 적합한 형식과 매체에 저장할 수 있는 자유를 준다. 일부 서비스는 전통적인 관계형 데이터베이스 시스템([RDBMS](https://en.wikipedia.org/wiki/Relational_database_management_system))(Oracle, MySQL, Postgres 포함)이나 [NoSQL 데이터베이스](http://nosql-database.org/)([Cassandra](http://cassandra.apache.org/), [Riak](http://basho.com/products)), [시계열 데이터베이스](https://en.wikipedia.org/wiki/Time_series_database)([InfluxDB](https://influxdata.com/), [OpenTSDB](http://opentsdb.net/))를 선택할 수 있고, 이벤트 소싱이나 CQRS를 통해 이벤트 로그([Kafka](http://kafka.apache.org/), [Amazon Kinesis](https://aws.amazon.com/kinesis/), Cassandra)를 사용한다.
 
-분산 데이터 관리 및 지속성에서 얻을 수 있는 이점은 종종 *Polyglot Persistence* 라 불린다.
+분산 데이터 관리 및 지속성에서 얻을 수 있는 이점은 종종 *Polyglot Persistence* 라 불린다. 사실 어떤 저장 매체를 사용하느냐는 중요하지 않다. 중요한 것은 상태와 행동을 포함하여 단일 단위로 취급될 수 있다는 것이며 그러기 위해선 각 서비스는 자신만의 상태를 독점적으로 가져야 한다는 점이다.
